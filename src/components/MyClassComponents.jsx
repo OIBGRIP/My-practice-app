@@ -23,6 +23,10 @@ export class MyClassComponents extends Component {
         this.setState({value : this.state.value / 2})
     }
 
+    Modules = () => {
+        this.setState({value : this.state.value % 2})
+    }
+
     render() {
         return <div>
             <h1>Class Components :</h1>
@@ -31,6 +35,7 @@ export class MyClassComponents extends Component {
             <button onClick={this.Decrement}>-</button>
             <button onClick={this.Multiply}>*</button>
             <button onClick={this.Divide}>/</button>
+            <button onClick={this.Modules}>%</button>
         </div>
         
     }
